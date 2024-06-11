@@ -12,4 +12,4 @@ async def autocomplete(q: str | None = None):
     elif len(q) < 3:
         raise HTTPException("QueryMustBeGreaterThan3Characters")
     
-    return await search_municipio(query=q)
+    return search_municipio(query=q)
